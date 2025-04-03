@@ -1,6 +1,6 @@
 {
   "id": "repeat-effort-note-plugin",
-  "name": "Repeat Effort Note",
+  "name": "Repeat Effort Note Obsidian Plugin",
   "version": "1.0.1",
   "minAppVersion": "0.12.0",
   "description": "Put a tag o #effort on notes that have 'repeat::' property on days|weeks|months periods. The format of the goal date is goal:: YYYY-MM-DD",
