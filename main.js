@@ -209,7 +209,7 @@ class NoteParser {
         let updatedDate = new Date(goalDate);
         let repeatValue = (typeof repeatPeriod.value === "number" && !isNaN(repeatPeriod.value)) ? repeatPeriod.value : 1;
 
-        period = repeatPeriod.period.toLowerCase();
+        let period = repeatPeriod.period.toLowerCase();
         switch (period) {
             case "day":
             case "days":
