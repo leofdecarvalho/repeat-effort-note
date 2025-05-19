@@ -127,7 +127,7 @@ class NoteParser {
         let repeatPeriod = period.toLowerCase();
 
         if (isNaN(repeatValue)) repeatValue = 1;
-        if (!["day", "days", "week", "weeks", "month", "months"].includes(repeatPeriod)) {
+        if (!["day", "days", "week", "weeks", "month", "months", "year", "years"].includes(repeatPeriod)) {
             repeatPeriod = "day";
         }
 
@@ -221,6 +221,10 @@ class NoteParser {
             case "month":
             case "months":
                 updatedDate.setMonth(updatedDate.getMonth() + repeatValue);
+                break;
+            case "year":
+            case "years":
+                updatedDate.setYear(updatedDate.getFullYear() + repeatValue);
                 break;
         }
 
