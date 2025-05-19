@@ -225,7 +225,7 @@ class NoteParser {
                 break;
             case "year":
             case "years":
-                updatedDate.setYear(updatedDate.getFullYear() + repeatValue);
+                updatedDate.setFullYear(updatedDate.getFullYear() + repeatValue);
                 break;
         }
 
